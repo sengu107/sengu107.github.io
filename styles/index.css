@@ -1,0 +1,98 @@
+/* ===== Hero ===== */
+
+.hero-name {
+    margin-bottom: 16px;
+
+    font-size: clamp(32px, 6vw, 52px);
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+.hero-sub {
+    margin-bottom: 48px;
+
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--muted2);
+}
+
+/* ===== Clock ===== */
+
+.clock-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+
+    padding: 14px 0;
+    margin-bottom: 64px;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.clock-label {
+    font-size: 11px;
+    color: var(--muted);
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#clock {
+    margin-left: auto;
+
+    font-size: 13px;
+    color: var(--muted2);
+}
+
+/* ===== Navigation ===== */
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-link {
+    display: flex;
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    font-size: 14px;
+    color: var(--muted2);
+
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.quick-link:first-child {
+    border-top: 1px solid var(--border);
+}
+
+.quick-link:hover {
+    color: var(--text);
+}
+
+.quick-link .ql-num {
+    width: 28px;
+    flex-shrink: 0;
+
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.quick-link .ql-arrow {
+    margin-left: auto;
+
+    font-size: 16px;
+    color: var(--muted);
+}
+
+.quick-link:hover .ql-arrow {
+    color: var(--text);
+}

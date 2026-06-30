@@ -1,0 +1,74 @@
+/* ===== Page Header ===== */
+
+.page-label {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+    color: var(--muted);
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page-title {
+    margin-bottom: 8px;
+
+    font-size: clamp(26px, 5vw, 42px);
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.page-sub {
+    margin-bottom: 48px;
+
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* ===== Devices ===== */
+
+.device-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.device-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
+
+    padding: 24px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.device-card:first-child {
+    border-top: 1px solid var(--border);
+}
+
+.device-name {
+    font-size: 14px;
+    color: var(--text);
+}
+
+.device-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    list-style: none;
+}
+
+.device-specs li {
+    font-size: 13px;
+    color: var(--muted2);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 520px) {
+    .device-card {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

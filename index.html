@@ -1,0 +1,52 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SenChan</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="device.html">Device</a>
+        <a href="social-media.html">Social</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h1 class="hero-name">Hi, I'm SenChan</h1>
+      <p class="hero-sub">CyberSec Student · CTF player · Hanoi</p>
+
+      <div class="clock-wrap">
+        <span class="clock-label">Local time</span>
+        <span id="clock">--:--:--</span>
+      </div>
+
+      <nav class="quick-links">
+        <a href="about.html" class="quick-link"><span class="ql-num">01</span>About<span class="ql-arrow">↗</span></a>
+        <a href="device.html" class="quick-link"><span class="ql-num">02</span>Device<span class="ql-arrow">↗</span></a>
+        <a href="social-media.html" class="quick-link"><span class="ql-num">03</span>Social<span class="ql-arrow">↗</span></a>
+        <a href="blog.html" class="quick-link"><span class="ql-num">04</span>Blog<span class="ql-arrow">↗</span></a>
+      </nav>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" 
+      src="https://open.spotify.com/embed/album/5ER34Rd6OkCwXBD7SOMB97?utm_source=generator&theme=0&si=5e39b79fce5a4d52" 
+      width="100%" height="152" frameBorder="0" allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; 
+      fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </main>
+
+    <footer class="site-footer">
+      <small>&copy; <span id="year"></span> SenChan</small>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      function tick(){ document.getElementById('clock').textContent = new Date().toLocaleTimeString(); }
+      tick(); setInterval(tick, 1000);
+    </script>
+  </body>
+  </html>

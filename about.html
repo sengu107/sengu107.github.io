@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — SenChan</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="device.html">Device</a>
+      <a href="social-media.html">Social</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+  <main class="hero">
+    <p class="page-label">About</p>
+    <h1 class="page-title">Hoang Kim Sang</h1>
+    <div class="quote-card">"When you play a game, there are only two situations:<br>
+            1. You win<br>
+            2. You learn"</div>
+    <div class="info-grid">
+      <div class="info-row"><span class="info-key">Nickname</span><span class="info-val">Sen / SenChan</span></div>
+      <div class="info-row"><span class="info-key">Birthday</span><span class="info-val">10 / 7 / 2xxx</span></div>
+      <div class="info-row"><span class="info-key">Location</span><span class="info-val">Hanoi, Vietnam</span></div>
+      <div class="info-row"><span class="info-key">Major</span><span class="info-val">Information Security & Networking</span></div>
+    </div>
+    <div class="hobby-card">
+      <h3>Interests</h3>
+      <div class="hobby-tags">
+        <span class="tag">Learning English</span>
+        <span class="tag">Hoyoverse games</span>
+        <span class="tag">Photography</span>
+        <span class="tag">CTF</span>
+        <span class="tag">Audiophile</span>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><small>&copy; <span id="year"></span> SenChan</small></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
